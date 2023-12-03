@@ -1,0 +1,268 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.10em;
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Tilt Warp';
+  font-size: 50px;
+  color: #160623;
+  margin-bottom: 0;
+}
+h2{
+  font-size: 25px;
+  color: #160623;
+}
+#verse{
+  font-size: 17px;
+  color: #160623;
+  font-family: 'Courgette';
+}
+
+#headersect {
+  display: flex;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  
+}
+
+#iiumlogo {
+  width: 70px;
+  height: 70px;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+#image-sect {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#donation {
+  height: 600px;
+  width: 670px;
+}
+
+#introsect {
+  text-align: center;
+  padding-top: 115px;
+  padding-right: 50px;
+  padding-left: 50px;
+  background-color: #ccadad;
+  height: 485px;
+}
+
+nav {
+  width: 1245px;
+  text-align: center;
+}
+
+nav ul {
+  float: right;
+}
+
+.navbar {
+  display: inline;
+  width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  padding: 6px;
+  font-weight: normal;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+a:hover {
+  color: #603939;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active,
+.navbar:hover {
+  padding: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: #9d6262;
+}
+
+input[type="text"],
+textarea {
+  width: 90%;
+  padding: 7px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(61, 55, 55);
+  border-radius: 7px;
+  resize: none;
+}
+
+#staff {
+  padding-bottom: 40px;
+}
+
+label {
+  font-size: 15px;
+}
+
+form {
+  margin: 0 auto;
+  width: 600px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+#formtitle {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#formsect {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-bottom: 50px;
+  padding: 25px;
+}
+
+fieldset {
+  margin-top: 20px;
+  padding: 15px;
+  margin-left: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#dateform {
+  margin-left: 40px;
+}
+
+footer {
+  text-align: center;
+  font-size: 15px;
+  width: 100%;
+  background-color: #ccadad;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+button {
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 15px;
+  width: 96%;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #804d4d;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #b38080;
+}
+
+.contactitems {
+  margin: 4px;
+}
+
+#iiumlogo {
+  grid-area: logo;
+}
+
+#navitems {
+  grid-area: nav;
+}
+
+#imagesect {
+  grid-area: intro1;
+}
+
+#introsect {
+  grid-area: intro2;
+}
+
+#formsect {
+  grid-area: form;
+}
+
+footer {
+  grid-area: foot;
+}
+
+@media(max-width: 768px) {
+  .container {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+      "logo nav"
+      "intro1 intro2"
+      "form form"
+      "foot foot"
+    ;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #navitems {
+    width: 650px;
+    
+  }
+  .navbar {
+    margin-bottom: 0;
+  }
+  #introsect{
+    padding-top: 85px;
+    height: 565px;
+   
+  }
+  .about-us {
+    width: 115%;
+    height: 60%;
+  }
+  
+  h1 {
+    font-family: 'Tilt Warp';
+    font-size: 40px;
+  }
+  h2{
+    font-size: 25px;
+    
+  }
+  #verse{
+    font-size: 16px;
+  }
+  #donation {
+    height: 650px;
+    width: 350px;
+  }
+  #formsect {
+    width: 30%;
+    margin-right: 50px;
+    margin-left: 80px;
+  }
+    #formtitle{
+      width: 250%;
+    }
+
+  form{
+    width: 250%;
+  }
+  footer {
+    width: 100%;
+  }
+}
